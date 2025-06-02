@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fargkanhs Memerios Books</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay">
+    <h1>📚 Fargkanhs Memerios Books</h1>
+    <div class="sidebar">
+      <button onclick="filterCategory('all')">📚 Όλα</button>
+      <button onclick="filterCategory('Κλασικά')">🌟 Κλασικά</button>
+      <button onclick="filterCategory('Μαγικά')">✨ Μαγικά</button>
+      <button onclick="filterCategory('Αστεία')">😂 Αστεία</button>
+      <button onclick="promptForPassword()">➕ Νέο Παραμύθι</button>
+      <button onclick="clearNotes()">🗑️ Καθαρισμός Σημειώσεων</button>
+    </div>
+    <div class="content">
+      <div id="book-list" class="book-list"></div>
+      <div class="notes">
+        <h2>📝 Σημειώσεις</h2>
+        <textarea id="notesArea" placeholder="Γράψε τις σημειώσεις σου εδώ..."></textarea>
+      </div>
+    </div>
+    <footer>To my lovely wife, princess Natalia 💖</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

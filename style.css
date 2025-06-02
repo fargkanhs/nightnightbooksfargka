@@ -1,0 +1,101 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive;
+  height: 100%;
+  overflow-x: hidden;
+}
+.background {
+  background-image: url('https://wallpapercave.com/wp/wp1894457.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px) brightness(0.6);
+  z-index: -2;
+}
+.overlay {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+}
+h1 {
+  text-align: center;
+  color: #fffacd;
+  padding: 1rem;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 180px;
+  height: calc(100% - 100px);
+  z-index: 1;
+}
+.sidebar button {
+  background: #ff69b4;
+  border: none;
+  margin: 0.3rem 0;
+  padding: 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+.content {
+  margin-left: 200px;
+  padding: 2rem;
+}
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.book {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 240px;
+  cursor: pointer;
+}
+.book-title {
+  font-weight: bold;
+}
+.book-details {
+  display: none;
+  margin-top: 0.5rem;
+}
+.book.open .book-details {
+  display: block;
+}
+.book button {
+  margin-top: 0.5rem;
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+.notes {
+  margin-top: 2rem;
+}
+textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-family: inherit;
+}
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 1rem;
+  background: rgba(0,0,0,0.4);
+}
